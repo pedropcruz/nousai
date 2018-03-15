@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "uri": "https://www.cenas.pt",
+    "name": "facebook",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 2,
+    "uri": "https://www.cenas.pt",
+    "name": "dribbble",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 3,
+    "uri": "https://www.cenas.pt",
+    "name": "twitter",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 4,
+    "uri": "https://www.cenas.pt",
+    "name": "linkedIn",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 5,
+    "uri": "https://www.cenas.pt",
+    "name": "googlePlus",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 6,
+    "uri": "https://www.cenas.pt",
+    "name": "Behance",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 7,
+    "uri": "https://www.cenas.pt",
+    "name": "github",
+    "icon": "cenas-facebook"
+  },
+  {
+    "id": 8,
+    "uri": "https://www.cenas.pt",
+    "name": "instagram",
+    "icon": "cenas-facebook"
+  }
+]
