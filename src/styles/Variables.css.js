@@ -22,12 +22,16 @@ const variable = {
         RobotoMedium: 'RobotoMedium',
         RobotoBold: 'RobotoBold',
         Rufina: 'Rufina',
-        RufinaBold: 'RufinaBold'
+        RufinaBold: 'RufinaBold',
+        iconFonts: 'fontello'
     },
     media: {
         sm: '(min-width: 40em)',
         md: '(min-width: 52em)',
         lg: '(min-width: 64em)'
+    },
+    path:{
+        icons: '../fonts/icons/fontello'
     }
 };
 

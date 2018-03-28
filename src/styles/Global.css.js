@@ -2,6 +2,7 @@ import 'basscss/css/basscss.min.css';
 import {injectGlobal} from 'styled-components';
 import variable from './Variables.css';
 import './reset.css';
+import Fonts from './Fonts.css';
 
 function fontFace(name, fontDir, src) {
     return `
@@ -20,6 +21,8 @@ injectGlobal`
   ${fontFace("RobotoMedium", "Roboto", "Roboto-Medium")};
   ${fontFace("Rufina", "Rufina", "Rufina-Regular")};
   ${fontFace("RufinaBold", "Rufina", "Rufina-Bold")};
+  
+  ${Fonts}
   
   html{
     font-family: ${variable.fonts.Roboto};
