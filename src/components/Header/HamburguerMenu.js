@@ -6,7 +6,7 @@ export class HamburguerMenu extends Component {
     constructor(props) {
         super(props);
 
-        this.state={
+        this.state = {
             overlayMenu: this.props.overlayMenu
         };
 
@@ -20,18 +20,20 @@ export class HamburguerMenu extends Component {
     }
 
     render() {
-        return [
-            <button className="mx2 nousai__header--menu relative right" onClick={this.onClickMenu}>
-                <span> </span>
-                <span> </span>
-            </button>,
-            <Modal
-                appElement={document.getElementById('root')}
-                isOpen={this.state.overlayMenu}
-                onRequestClose={this.onClickMenu}
-            >
+        return (
+            <div>
+                <button className="mx2 nousai__header--menu relative right" onClick={this.onClickMenu}>
+                    <span> </span>
+                    <span> </span>
+                </button>
+                <Modal
+                    appElement={document.getElementById('root')}
+                    isOpen={this.state.overlayMenu}
+                    onRequestClose={this.onClickMenu}
+                >
 
-            </Modal>
-        ];
+                </Modal>
+            </div>
+        );
     }
 }
