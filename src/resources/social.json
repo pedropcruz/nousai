@@ -3,48 +3,48 @@
     "id": 1,
     "uri": "https://www.cenas.pt",
     "name": "facebook",
-    "icon": "cenas-facebook"
+    "icon": "icon-facebook"
   },
   {
     "id": 2,
     "uri": "https://www.cenas.pt",
     "name": "dribbble",
-    "icon": "cenas-facebook"
+    "icon": "icon-dribbble"
   },
   {
     "id": 3,
     "uri": "https://www.cenas.pt",
     "name": "twitter",
-    "icon": "cenas-facebook"
+    "icon": "icon-twitter"
   },
   {
     "id": 4,
     "uri": "https://www.cenas.pt",
     "name": "linkedIn",
-    "icon": "cenas-facebook"
+    "icon": "icon-linkedin"
   },
   {
     "id": 5,
     "uri": "https://www.cenas.pt",
-    "name": "googlePlus",
-    "icon": "cenas-facebook"
+    "name": "google Plus",
+    "icon": "icon-gplus"
   },
   {
     "id": 6,
     "uri": "https://www.cenas.pt",
     "name": "Behance",
-    "icon": "cenas-facebook"
+    "icon": "icon-behance"
   },
   {
     "id": 7,
     "uri": "https://www.cenas.pt",
     "name": "github",
-    "icon": "cenas-facebook"
+    "icon": "icon-github"
   },
   {
     "id": 8,
     "uri": "https://www.cenas.pt",
     "name": "instagram",
-    "icon": "cenas-facebook"
+    "icon": "icon-instagram"
   }
 ]
