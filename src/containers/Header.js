@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import HeaderCSS from './Header.css';
-import {LogoImg} from "../components/Header/LogoImg";
-import {HamburguerMenu} from "../components/Header/HamburguerMenu";
+import LogoImg from "../components/Header/LogoImg";
+import HamburguerMenu from "../components/Header/HamburguerMenu";
+import Arrow from '../components/NavigationArrows/Arrow';
 
 export class Header extends Component {
 
