@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Modal from 'react-modal';
 
-export class HamburguerMenu extends Component {
+export default class HamburguerMenu extends Component {
 
     constructor(props) {
         super(props);
