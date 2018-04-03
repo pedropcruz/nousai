@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Home",
+    "url": "/"
+  },
+  {
+    "id": 1,
+    "name": "About Us",
+    "url": "/about"
+  },
+  {
+    "id": 2,
+    "name": "Pricing",
+    "url": "/pricing"
+  },
+  {
+    "id": 3,
+    "name": "Case Studies",
+    "url": "/casestudies"
+  },
+  {
+    "id": 4,
+    "name": "Newsletter",
+    "url": "/newsletter"
+  },
+  {
+    "id": 5,
+    "name": "Contact us",
+    "url": "/contact"
+  }
+]
