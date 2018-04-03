@@ -1,28 +1,75 @@
 import React, {Component} from 'react';
 import ArrowCSS from './Arrow.css';
 import {Link} from 'react-router-dom';
+import navLinks from '../../resources/navLinks';
+import {withRouter} from 'react-router';
 
-export default class Arrow extends Component{
+class Arrow extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
-            prevPageFlag: (typeof (this.props.prevPage) === 'object'),
-            nextPageFlag: (typeof (this.props.nextPage) === 'object'),
-            nextPage: this.props.nextPage,
-            prevPage: this.props.prevPage
+            prevPath: '',
+            nextPath: ''
         };
 
+        this.checkNextPath = this.checkNextPath.bind(this);
+        this.checkPreviousPath = this.checkPreviousPath.bind(this);
     }
 
+    componentDidMount() {
+        this.checkPreviousPath();
+        this.checkNextPath();
+    }
 
-    render(){
-        return(
-            <ArrowCSS className="relative">
-                {(this.state.prevPageFlag) ? <Link to={this.state.prevPage.url} title={this.state.prevPage.name}>{this.state.prevPage.name}</Link> : ""}
-                {(this.state.nextPageFlag) ? <Link to={this.state.nextPage.url} title={this.state.nextPage.name}>{this.state.nextPage.name}</Link>: ""}
+    checkNextPath(location) {
+        if(!location){
+            location = this.props.location
+        }
+
+        let newPath = navLinks.map((obj, i, arr) => {
+            if(obj.url === location.pathname){
+                return arr[i+1];
+            }
+        }).filter(n => n !== undefined)[0];
+
+        this.setState({
+            nextPath: newPath
+        });
+    }
+
+    checkPreviousPath(location) {
+        if(!location){
+            location = this.props.location
+        }
+
+        let newPath = navLinks.map((obj, i, arr) => {
+            if(obj.url === location.pathname && location.pathname !== '/'){
+                return arr[i-1];
+            }
+        }).filter(n => n !== undefined)[0];
+
+        this.setState({
+            prevPath: newPath
+        });
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.checkPreviousPath(nextProps.location);
+        this.checkNextPath(nextProps.location);
+    }
+
+    render() {
+        return (
+            <ArrowCSS className="fixed xs-hide">
+                {(this.state.prevPath) ?
+                    <Link className="prev" to={this.state.prevPath.url}>{this.state.prevPath.name}</Link> : ""}
+                {(this.state.nextPath) ?
+                    <Link className="next" to={this.state.nextPath.url}>{this.state.nextPath.name}</Link> : ""}
             </ArrowCSS>
         );
     }
 }
+
+export default withRouter(Arrow);
