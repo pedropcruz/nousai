@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import Modal from 'react-modal';
+import navLinksData from '../../resources/navLinks';
 
 export default class HamburguerMenu extends Component {
 
@@ -29,9 +31,15 @@ export default class HamburguerMenu extends Component {
                 <Modal
                     appElement={document.getElementById('root')}
                     isOpen={this.state.overlayMenu}
-                    onRequestClose={this.onClickMenu}
-                >
-
+                    onRequestClose={this.onClickMenu}>
+                    <button onClick={this.onClickMenu}><i className="icon icon-close"> </i>cenas</button>
+                    <ul className="list-reset block">
+                        {navLinksData.map((item) => (
+                            <li key={`navLinks_${item.id}`} className="block">
+                                <Link to={item.url} >{item.name}</Link>
+                            </li>
+                        ))}
+                    </ul>
                 </Modal>
             </div>
         );
