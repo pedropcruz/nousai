@@ -1,22 +1,24 @@
 import styled from 'styled-components';
 import variable from "../../styles/Variables.css";
 
-const arrowWidth = "75px";
+const arrowWidth = "96px";
 
 const ArrowCSS = styled.nav`
   .prev,
   .next{
   background: ${variable.colors.whiteColor};
-  width: 4em;
-  height:100%;
+  width: 6em;
+  height:auto;
   text-align: center;
   z-index: -1;
+  top: 96px;
+  bottom:96px;
     &__link{
       white-space: nowrap;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      top:50vh;
+      top:50%;
       transform-origin: 50% 0;
       text-decoration: none;
       font: 400 ${variable.value.bv5}/${variable.value.bv6} ${variable.fonts.RufinaBold};
@@ -27,7 +29,7 @@ const ArrowCSS = styled.nav`
       transition: width .3s ease-in-out;
       position: absolute;
       display: block;
-      top: 50vh;
+      top: 50%;
       height: calc(${variable.value.bv0} - 1px);
       width: calc(${arrowWidth}/2);
       background: ${variable.colors.primaryColor};
@@ -37,7 +39,7 @@ const ArrowCSS = styled.nav`
       content: " ";
       position: absolute;
       display: block;
-      top: 50vh;
+      top: 50%;
       width: ${variable.value.bv1};
       height: ${variable.value.bv1};
       border-top: 3px solid ${variable.colors.primaryColor};
@@ -59,11 +61,11 @@ const ArrowCSS = styled.nav`
     &:after{
       transform: rotate(225deg);
       transform-origin: 85% 15%;
-      right: 300px;
+      right: calc(${arrowWidth} + ${variable.value.bv3});
     }
     &:hover{
       &:after{
-        right: -${variable.value.bv2};
+        right: 0;
       }
     }
   }
@@ -77,11 +79,11 @@ const ArrowCSS = styled.nav`
     &:after{
       transform: rotate(45deg);
       transform-origin: 50% -70%;
-      left: 300px;
+      left: calc(${arrowWidth} + ${variable.value.bv3});
     }
     &:hover{
       &:after{
-        left: -${variable.value.bv2};
+        left: 0;
       }
     }
   }
