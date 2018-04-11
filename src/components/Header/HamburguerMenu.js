@@ -31,9 +31,11 @@ export default class HamburguerMenu extends Component {
                 <Modal
                     appElement={document.getElementById('root')}
                     isOpen={this.state.overlayMenu}
-                    onRequestClose={this.onClickMenu}>
-                    <button onClick={this.onClickMenu}><i className="icon icon-close"> </i>cenas</button>
-                    <ul className="list-reset block">
+                    onRequestClose={this.onClickMenu}
+                    className="Modal"
+                    overlayClassName="Modal--Overlay">
+                    <button onClick={this.onClickMenu}><i className="icon icon-close"> </i>close</button>
+                    <ul className="list-reset block Modal--navLinks">
                         {navLinksData.map((item) => (
                             <li key={`navLinks_${item.id}`} className="block">
                                 <Link to={item.url} >{item.name}</Link>
