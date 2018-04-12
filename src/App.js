@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {Header} from "./containers/Header";
-import {Footer} from "./containers/Footer";
+import {Header} from "./containers/Header/Header";
+import {Footer} from "./containers/Footer/Footer";
 import Arrow from './components/NavigationArrows/Arrow';
 import {Switch, Route} from 'react-router-dom';
-import {Home} from "./containers/Home";
+import {Home} from "./containers/Home/Home";
 
 class App extends Component {
 

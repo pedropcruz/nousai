@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import variable from "../styles/Variables.css";
-import Logo from '../logo.svg';
-import LogoDesktop from '../logoDesktop.svg';
+import variable from "../../styles/Variables.css";
+import Logo from '../../logo.svg';
+import LogoDesktop from '../../logoDesktop.svg';
 
 
 const HeaderCSS = styled.header`

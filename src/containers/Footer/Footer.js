@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import FooterCSS from './Footer.css';
-import {SocialLinks} from "../components/Footer/SocialLinks";
-import Copyright from "../components/Footer/Copyright";
+import {SocialLinks} from "../../components/Footer/SocialLinks";
+import Copyright from "../../components/Footer/Copyright";
 
 export class Footer extends Component{
     render(){

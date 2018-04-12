@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import backgroundImage from '../resources/img/bgnousaiwebsite.png';
-import variable from "../styles/Variables.css";
+import backgroundImage from '../../resources/img/bgnousaiwebsite.png';
+import variable from "../../styles/Variables.css";
 
 const HomeCSS = styled.section`
   &.nousai__quotes,
