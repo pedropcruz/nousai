@@ -62,7 +62,7 @@ class Arrow extends Component {
 
     render() {
         return (
-            <ArrowCSS className="relative xs-hide">
+            <ArrowCSS className="relative xs-hide sm-hide">
                 {(this.state.prevPath) ?
                     <div className="prev fixed left-0">
                         <Link className="prev__link relative block" to={this.state.prevPath.url}>

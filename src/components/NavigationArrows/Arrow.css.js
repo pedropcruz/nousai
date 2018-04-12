@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import variable from "../../styles/Variables.css";
 
-const arrowWidth = "96px";
-
 const ArrowCSS = styled.nav`
   .prev,
   .next{
@@ -10,9 +8,9 @@ const ArrowCSS = styled.nav`
   width: 6em;
   height:auto;
   text-align: center;
-  z-index: -1;
-  top: 96px;
-  bottom:96px;
+  z-index: 10;
+  top: ${variable.value.defaultValue};
+  bottom: ${variable.value.defaultValue};
     &__link{
       white-space: nowrap;
       display: flex;
@@ -31,7 +29,7 @@ const ArrowCSS = styled.nav`
       display: block;
       top: 50%;
       height: calc(${variable.value.bv0} - 1px);
-      width: calc(${arrowWidth}/2);
+      width: calc(${variable.value.defaultValue}/2);
       background: ${variable.colors.primaryColor};
     }
     &:after{
@@ -47,7 +45,7 @@ const ArrowCSS = styled.nav`
     }
     &:hover{
       &:before{
-        width: ${arrowWidth};   
+        width: ${variable.value.defaultValue};   
       }
     }
   }
@@ -56,16 +54,16 @@ const ArrowCSS = styled.nav`
       transform: rotate(-90deg);
     }
     &:before{
-      left: ${arrowWidth};
+      left: calc(${variable.value.defaultValue} - ${variable.value.bv2});
     }
     &:after{
       transform: rotate(225deg);
       transform-origin: 85% 15%;
-      right: calc(${arrowWidth} + ${variable.value.bv3});
+      right: calc(${variable.value.defaultValue} + ${variable.value.bv3});
     }
     &:hover{
       &:after{
-        right: 0;
+        right: 10px;
       }
     }
   }
@@ -74,16 +72,16 @@ const ArrowCSS = styled.nav`
       transform: rotate(90deg);
     }
     &:before{
-      right: ${arrowWidth};
+      right: calc(${variable.value.defaultValue} - ${variable.value.bv2});
     }
     &:after{
       transform: rotate(45deg);
       transform-origin: 50% -70%;
-      left: calc(${arrowWidth} + ${variable.value.bv3});
+      left: calc(${variable.value.defaultValue} + ${variable.value.bv3});
     }
     &:hover{
       &:after{
-        left: 0;
+        left: 10px;
       }
     }
   }
