@@ -16,6 +16,8 @@ const variable = {
         bv9: getBaseValue(10),
         bv10: getBaseValue(11),
         bv11: getBaseValue(12),
+        defaultValue: "96px",
+        defaultValue0: "64px"
     },
     fonts: {
         Roboto: 'Roboto',

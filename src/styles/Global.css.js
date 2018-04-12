@@ -48,6 +48,7 @@ injectGlobal`
       left:0;
       bottom:0;
       background: ${variable.colors.primaryColor};
+      z-index: 20;
       button{
         display: block;
         margin-left: auto;
@@ -106,6 +107,20 @@ injectGlobal`
             }
           }
         }
+      }
+    }
+  }
+  
+  
+  .nousai_app{
+    &--section{
+      top: ${variable.value.defaultValue};
+      bottom:${variable.value.defaultValue};
+      right:${variable.value.bv3};
+      left:${variable.value.bv3};
+      @media ${variable.media.md}{
+        right:${variable.value.defaultValue};
+        left: ${variable.value.defaultValue};
       }
     }
   }
