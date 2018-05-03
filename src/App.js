@@ -4,6 +4,7 @@ import {Footer} from "./containers/Footer/Footer";
 import Arrow from './components/NavigationArrows/Arrow';
 import {Switch, Route} from 'react-router-dom';
 import {Home} from "./containers/Home/Home";
+import {About} from "./containers/About/About";
 
 class App extends Component {
 
@@ -24,7 +25,7 @@ class App extends Component {
                 <section className="nousai_app--section absolute">
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route exact path="/about" render={() => <h1>About</h1>} />
+                        <Route exact path="/about" component={About} />
                         <Route exact path="/pricing" render={() => <h1>Pricing</h1>} />
                         <Route exact path="/casestudies" render={() => <h1>case studies</h1>} />
                         <Route exact path="/newsletter" render={() => <h1>newsletter</h1>} />
