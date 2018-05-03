@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Our Purpouse",
+    "content": "Nousai is especialized on creating web app’s and new design interfaces with a good experience. That’s why we value inspiration."
+  },
+  {
+    "id": 2,
+    "title": "Our Values",
+    "content": [
+      "responsible",
+      "learning",
+      "design",
+      "create",
+      "innovation",
+      "happiness",
+      "delivery",
+      "develop",
+      "testing",
+      "strategy",
+      "branding",
+      "clean"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "How we create better products?",
+    "content": "We create based on our expertise, and of course it’s our passion. We want to innovate products for our clients, the best experience to the clients of our custoumers. We think outside of the box, and want to make very good practices on develop a product."
+  },
+  {
+    "id": 4,
+    "title": "Why you should hire us?",
+    "content": "Because we do inspirational and good work, with great prices too. We’re worried with the hapiness and proud on our product’s custoumer. We mantain the product with updates and our success is to mantain the hapiness of our custoumer."
+  }
+]
