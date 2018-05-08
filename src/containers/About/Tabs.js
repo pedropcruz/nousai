@@ -8,7 +8,8 @@ export default class Tabs extends Component {
         super(props);
 
         this.state = {
-            selected: this.props.selected || 0
+            selected: this.props.selected || 0,
+            titleWidth: ''
         };
 
         this._renderTitle = this._renderTitle.bind(this);
@@ -38,9 +39,13 @@ export default class Tabs extends Component {
         return data.map((item, index) => (
             <div key={index} style={(index === this.state.selected) ? {display: 'block'} : {display: 'none'}}
                  className="tabs__content">
-                <h1>{item.title}</h1>
-                {(Array.isArray(item.content)) ? item.content.map((item, index) => (<p key={index}>{item}</p>)) :
-                    <p>{item.content}</p>}
+                <h1 className="tabs__content--title">
+                    <span>{item.title}</span>
+                </h1>
+                <div className={(Array.isArray(item.content)) ? "tabs__content--desc__items" : "tabs__content--desc"}>
+                    {(Array.isArray(item.content)) ? item.content.map((item, index) => (<h5 className="tabs__content--desc__h5" key={index}>{item}</h5>)) :
+                        <p>{item.content}</p>}
+                </div>
             </div>
         ));
     }
@@ -48,7 +53,7 @@ export default class Tabs extends Component {
 
     render() {
         return (
-            <TabsCSS className="relative tabs">
+            <TabsCSS className="relative tabs" titleWidth={this.state.titleWidth}>
                 {this._renderContent(dataForAbout)}
                 {this._renderTitle(dataForAbout)}
             </TabsCSS>
