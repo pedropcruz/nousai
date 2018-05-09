@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "packageName": "Branding package",
+    "img": "",
+    "value": 150,
+    "featuredList":[
+      "Branding Books",
+      "Png's",
+      "Jpeg's",
+      "Mockups",
+      "Social Images"
+    ]
+  },
+  {
+    "id": 1,
+    "packageName": "WebApp Package",
+    "img": "",
+    "featuredList": [
+      "All files from Project",
+      "Domain",
+      "Hosting",
+      "Updated Project"
+    ]
+  }
+]
