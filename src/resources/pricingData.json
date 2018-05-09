@@ -2,12 +2,11 @@
   {
     "id": 0,
     "packageName": "Branding package",
-    "img": "",
+    "style": "brandingPackage",
     "value": 150,
     "featuredList":[
       "Branding Books",
-      "Png's",
-      "Jpeg's",
+      "Png's / Jpeg's",
       "Mockups",
       "Social Images"
     ]
@@ -15,7 +14,8 @@
   {
     "id": 1,
     "packageName": "WebApp Package",
-    "img": "",
+    "style": "webAppPackage",
+    "img": "img/webapp_icon.png",
     "featuredList": [
       "All files from Project",
       "Domain",

@@ -147,4 +147,33 @@ injectGlobal`
       }
     }
   }
+  
+  .btn{
+    position: relative;
+    text-transform: uppercase;
+    font: 900 ${variable.value.bv5}/${variable.value.bv6} ${variable.fonts.RobotoBold};
+    color: ${variable.colors.primaryColor};
+    display: block;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    &:after,
+    &:before{
+      content: "";
+      position: absolute;
+      top:50%;
+      width: 25%;
+      height: 2px;
+      background: ${variable.colors.primaryColor};
+    }
+    &:before{
+      left:0;
+    }
+    &:after{
+      right:0;
+    }
+    &:hover{
+      opacity: .5;
+    }
+  }
 `;
