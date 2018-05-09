@@ -12,29 +12,6 @@ const TabsCSS = styled.div`
       @media ${variable.media.sm}{
         margin: 0 6em;      
       }
-      &--title{
-        font: 400 ${variable.value.bv5}/${variable.value.bv6} ${variable.fonts.Rufina};
-        color: ${variable.colors.primaryColor};
-        margin: 1.2em 0 1em 0;
-        @media ${variable.media.sm}{
-          font: 400 ${variable.value.bv10}/${variable.value.bv11} ${variable.fonts.Rufina};
-        }
-        span{
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-        padding-right: 2em;
-          &:after{
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background: ${variable.colors.primaryColor};
-            top: 50%;
-            left: 50%;
-          }
-        }
-      }
       &--desc{
         font: 400 ${variable.value.bv4}/${variable.value.bv6} ${variable.fonts.RobotoMedium};
         color: ${variable.colors.primaryColor};

@@ -39,7 +39,7 @@ export default class Tabs extends Component {
         return data.map((item, index) => (
             <div key={index} style={(index === this.state.selected) ? {display: 'block'} : {display: 'none'}}
                  className="tabs__content">
-                <h1 className="tabs__content--title">
+                <h1 className="tabs__content--title title">
                     <span>{item.title}</span>
                 </h1>
                 <div className={(Array.isArray(item.content)) ? "tabs__content--desc__items" : "tabs__content--desc"}>
